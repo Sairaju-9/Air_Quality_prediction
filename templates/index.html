@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Quality Prediction</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        form {
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px; /* Adjust padding as needed */
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+        display: block;
+        margin: 0 auto; /* Center the button */
+        width: 50%; /* Set the button width to 50% of the parent container */
+        }
+
+
+        h1,
+        h2 {
+            color: #000000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="form-container">
+        <form action="/predict" method="post">
+            <center><h2 style="color: green;">Air Quality Prediction</h2></center>
+
+        <label>PT08_S1 Value:</label>
+        <input type="number" name="PT08_S1">
+
+        <label>NMHC Value:</label>
+        <input type="number" name="NMHC">
+
+        <label>C6H6 value:</label>
+        <input type="number" name="C6H6">
+
+        <label>PT08_S2 value:</label>
+        <input type="number" name="PT08_S2">
+
+        <label>NOx value:</label>
+        <input type="number" name="NOx">
+
+        <label>PT08_S3 value:</label>
+        <input type="number" name="PT08_S3">
+
+        <label>NO2 value:</label>
+        <input type="number" name="NO2">
+
+        <label>PT08_S4 value:</label>
+        <input type="number" name="PT08_S4">
+
+        <label>PT08_S5 values:</label>
+        <input type="number" name="PT08_S5">
+
+        <label>T value:</label>
+        <input type="number" name="T">
+
+        <label>RH value:</label>
+        <input type="number" name="RH">
+
+        <label>AH value:</label>
+        <input type="number" name="AH">
+
+        <button>Submit</button>
+
+        <center><h1>Air Quality : {{Ard}}</h1>
+        <h2>This is my approximate Predicted values</h2></center>
+    </form>
+    </div>
+</body>
+</html>
