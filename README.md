@@ -20,7 +20,5 @@ python app.py
 
 Afterward, open your web browser and navigate to http://localhost:5000/. A web page will appear, featuring a form where you can input values for various parameters such as temperature, humidity, and pressure. Click the "Predict" button to obtain the predicted AQI value.
 
-Alternatively, you can access the application online [here](^1^).
+Alternatively, you can access the application online [here](^https://lakshmisowjanya11.pythonanywhere.com/^).
 
-
-[^1^]: Insert your online application link here.
